@@ -5,7 +5,20 @@ tab.map(item=>tab2.push(item * 2))
 
 console.log(tab2)*/
 
-let ac = document.querySelector('.ac')
-ac.addEventListener('click', function () {
-    console.log(ac.id)
+
+let btns = document.querySelectorAll('.btn')
+btns.forEach(function(item){
+    item.addEventListener('click',function(){
+        let screen = document.querySelector('.screen-content')     
+        if (item.id === 'ac') {
+            screen.value = ""
+        }else{
+                if (item.id === '=') {
+                    screen.value = eval(screen.value)
+            } 
+            else {
+                screen.value += item.id
+        }
+        }
+    })
 })
