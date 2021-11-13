@@ -18,6 +18,7 @@ main{
     width: 275px;
     height: 512px;
     background-color: black;
+    border-radius: 25px 25px;
 }
 .screen{
     height: 33.78%;
