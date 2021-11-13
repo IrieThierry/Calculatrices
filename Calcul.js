@@ -9,15 +9,18 @@ console.log(tab2)*/
 let btns = document.querySelectorAll('.btn')
 btns.forEach(function(item){
     item.addEventListener('click',function(){
-        let screen = document.querySelector('.screen-content')     
+        let screen1 = document.querySelector('.little-screen')
+        let screen2 = document.querySelector('.screen-content')     
+     
         if (item.id === 'ac') {
-            screen.value = ""
+            screen1.value = ""
+            screen2.value = ""
         }else{
                 if (item.id === '=') {
-                    screen.value = eval(screen.value)
+                    screen2.value = eval(screen1.value)
             } 
             else {
-                screen.value += item.id
+                screen1.value += item.id
         }
         }
     })
