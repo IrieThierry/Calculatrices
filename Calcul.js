@@ -25,17 +25,17 @@ btns.forEach(function(item){
 
         let screen1 = document.querySelector('.little-screen')
         let screen2 = document.querySelector('.screen-content')     
-     
+        
         if (item.id === 'ac') {
             screen1.value = ""
-            screen2.value = ""
+            screen2.value = "0"
         }else{
                 if (item.id === '=') {
                     screen2.value = eval(screen1.value)
             } 
             else {
                 screen1.value += item.id
-        }
+            }
         }
     })
 })

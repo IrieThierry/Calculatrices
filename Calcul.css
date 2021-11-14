@@ -52,6 +52,9 @@ button{
 .operator{
     background-color: rgb(255, 115, 0);
 }
+.operator-egal{
+    background-color: rgb(255, 115, 0);
+}
 .number{
     background-color: rgb(59, 59, 59);
 }
